@@ -1,0 +1,45 @@
+.feed-container {
+  margin-top: 20px;
+}
+
+.feed-header {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feed-header h2 {
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.feed-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .posts-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feed-header {
+    padding: 15px;
+  }
+
+  .feed-header h2 {
+    font-size: 1.3rem;
+  }
+}
